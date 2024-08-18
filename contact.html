@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+    <div class="container my-5 text-center">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! For inquiries, support, or feedback, reach out to us through the following:</p>
+        <p>Email: <a href="mailto:contact@fashionclassifier.com">contact@fashionclassifier.com</a></p>
+        <p>Phone: +1-234-567-8901</p>
+        <img src="{{ url_for('static', filename='images/contact_us.jpg') }}" alt="Contact Us" class="img-fluid my-4">
+    </div>
+{% endblock %}

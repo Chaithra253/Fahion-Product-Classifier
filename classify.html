@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Classify{% endblock %}
+
+{% block content %}
+    <div class="container my-5">
+        <h2 class="text-center">Upload Your Fashion Image</h2>
+        <form method="POST" enctype="multipart/form-data" class="mt-4">
+            <div class="mb-3">
+                <label for="file" class="form-label">Select an image file</label>
+                <input type="file" name="file" id="file" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Classify Image</button>
+        </form>
+    </div>
+{% endblock %}

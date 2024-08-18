@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white d-flex flex-column justify-content-center align-items-center">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <img src="{{ url_for('static', filename='static\images\LOGO.jpg') }}" alt="Logo" class="hero-logo mb-4">
+            <h1 class="display-4">Discover the Latest in Fashion</h1>
+            <p class="lead">Classify and explore fashion products effortlessly with our advanced AI technology.</p>
+            <a href="{{ url_for('classify') }}" class="btn btn-primary btn-lg mt-4">Start Classifying</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Choose Us?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <img src="{{ url_for('static', filename='images/feature1.png') }}" alt="Accurate AI Classification" class="img-fluid mb-3">
+                        <h3>Accurate AI Classification</h3>
+                        <p>Leverage cutting-edge AI to get precise and reliable fashion classifications.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <img src="{{ url_for('static', filename='images/feature2.png') }}" alt="Intuitive User Interface" class="img-fluid mb-3">
+                        <h3>Intuitive User Interface</h3>
+                        <p>Enjoy a sleek and user-friendly interface that simplifies the classification process.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <img src="{{ url_for('static', filename='images/feature3.png') }}" alt="Instant Results" class="img-fluid mb-3">
+                        <h3>Instant Results</h3>
+                        <p>Get quick and accurate results for all your fashion classification needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">What Our Users Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card text-center">
+                        <p>"An amazing tool for our fashion needs. The accuracy and speed are impressive!"</p>
+                        <p><strong>Jane Doe</strong>, Fashion Designer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card text-center">
+                        <p>"Highly effective and easy to use. It has streamlined our product classification process."</p>
+                        <p><strong>John Smith</strong>, Data Analyst</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card text-center">
+                        <p>"The classifier is a must-have for anyone in the fashion industry. Highly recommended!"</p>
+                        <p><strong>Emily Johnson</strong>, Fashion Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <div class="container my-5 text-center">
+        <h2>About Our Fashion Classifier</h2>
+        <p>We are dedicated to providing a powerful AI-driven tool to streamline the classification of fashion products. Our classifier uses advanced machine learning algorithms to ensure accurate and efficient categorization.</p>
+        <img src="{{ url_for('static', filename='images/about_us.jpg') }}" alt="About Us" class="img-fluid my-4">
+        <p>Our goal is to support designers and data experts by offering a tool that simplifies their workflow and enhances productivity.</p>
+    </div>
+{% endblock %}
